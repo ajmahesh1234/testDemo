@@ -3,25 +3,29 @@ pipeline {
     stages {
         stage('build Stage') {
             steps {
-                withMaven(maven : 'apache-maven-3.3.9' ){
-                sh 'mvn -B -DskipTests clean compile'
-                }
+               withMaven(maven : 'Maven' ){
+                bat 'mvn clean'
+	       }
+		
+                
             }
         }
 		
 		stage('Testing Stage') {
             steps {
-                withMaven(maven : 'apache-maven-3.3.9' ){
-                sh 'mvn -B -DskipTests test'
-                }
+               withMaven(maven : 'Maven' ){
+                bat 'mvn test'
+	       }	       
+                
             }
         }
 		
 		stage('Deploy Stage') {
             steps {
-                withMaven(maven : 'apache-maven-3.3.9' ){
-                sh 'mvn -B -DskipTests deploy'
-                }
+               withMaven(maven : 'Maven' ){
+                bat 'mvn deploy'
+	       }
+                
             }
         }
     }
