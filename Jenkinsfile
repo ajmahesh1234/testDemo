@@ -11,15 +11,22 @@ pipeline {
             }
         }
 		
-		stage('Testing Stage') {
+	//	stage('Testing Stage') {
+          //  steps {
+            //   withMaven(maven : 'Maven' ){
+              //  bat 'mvn test'
+	       //}	       
+                
+            //}
+        //}
+	stage('Deploy Stage') {
             steps {
                withMaven(maven : 'Maven' ){
-                bat 'mvn test'
-	       }	       
+                bat 'mvn deploy'
+	       }
                 
             }
-        }
-		
+        }	
 		
     }
 }
