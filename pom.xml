@@ -13,6 +13,13 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <distributionManagement>
+        <repository>
+          <id></id>
+          <url></url>
+        </repository>
+     </distributionManagement>
 
   <dependencies>
     <dependency>
