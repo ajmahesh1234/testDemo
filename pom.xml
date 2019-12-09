@@ -16,7 +16,8 @@
   
   <distributionManagement>
         <repository>
-         
+         <id>releases</id>
+          <url>https://github.com/ajmahesh1234/Hello/</url>
         </repository>
      </distributionManagement>
 
