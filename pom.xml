@@ -16,8 +16,7 @@
   
   <distributionManagement>
         <repository>
-          <id></id>
-          <url></url>
+         
         </repository>
      </distributionManagement>
 
